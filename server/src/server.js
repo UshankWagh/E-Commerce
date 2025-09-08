@@ -13,7 +13,7 @@ const app = express();
 const PORT = process.env.SERVER_PORT || 5001;
 
 app.use(cors({
-    origin: "http://localhost:5173"
+    origin: "https://e-commerce-usw.vercel.app"
 }));
 app.use(express.json());
 
