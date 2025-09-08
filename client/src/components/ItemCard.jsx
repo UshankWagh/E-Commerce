@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import RatingsStars from './RatingsStars'
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import { IndianRupee } from 'lucide-react';

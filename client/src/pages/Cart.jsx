@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Plus, Search } from "lucide-react";
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import Loader from '../components/Loader';
 import CartItemCard from '../components/CartItemCard';
 
 const Cart = ({ auth }) => {
