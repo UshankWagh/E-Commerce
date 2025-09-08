@@ -41,6 +41,8 @@ const Login = ({ handleLogin }) => {
             <div className="px-8 py-10 m-auto rounded-xl w-96 shadow-xl">
                 <h3 className="font-bold text-3xl">Login</h3>
                 <form className="form mt-9 mb-6 flex flex-col gap-4" onSubmit={loginHandler}>
+                    <p className="font-bold text-lg">Username: user1</p>
+                    <p className="font-bold text-lg">Password: user1</p>
                     <div className='inp min-w-60'>
                         <label className="input input-bordered flex items-center gap-2">
                             Username :
