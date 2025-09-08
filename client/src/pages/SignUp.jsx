@@ -7,7 +7,7 @@ const SignUp = ({ handleLogin }) => {
     const [name, setName] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [role, setRole] = useState(null);
+    const [role, setRole] = useState(2);
 
     const navigate = useNavigate();
 
@@ -43,13 +43,13 @@ const SignUp = ({ handleLogin }) => {
             <div className="px-8 py-10 m-auto rounded-xl w-96 shadow-xl">
                 <h3 className="font-bold text-3xl">Register</h3>
                 <form className="form mt-9 mb-6 flex flex-col gap-4" onSubmit={signUpHandler}>
-                    <div className="inp">
+                    {/* <div className="inp">
                         <select className="select select-bordered w-full max-w-xs text-base" defaultValue={null} onChange={(e) => { setRole((e.target.value)) }} required>
                             <option disabled value={null}>Select Role</option>
                             <option value={1}>Admin</option>
                             <option value={2}>Customer</option>
                         </select>
-                    </div>
+                    </div> */}
                     <div className='inp min-w-60'>
                         <label className="input input-bordered flex items-center gap-2">
                             Name :
