@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, Route, Routes, useNavigate } from 'react-router'
-import SysAdminDashBoard from './pages/SysAdminDashBoard'
 import PrivateRoute from './components/PrivateRoute'
-import Navbar from './components/Navbar'
-import StoreList from './pages/StoresList'
-import UsersList from './pages/UsersList'
 import Items from './pages/Items'
-import StoreOwnerDashboard from './pages/StoreOwnerDashboard'
 import Cart from './pages/Cart'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
@@ -64,18 +59,6 @@ const App = () => {
       <Route path="/*" element=<PrivateRoute auth={auth} />>
         <Route path="" element=<NotFound /> />
       </Route>
-
-      {/* <Route path="/admin/" element=<PrivateRoute />>
-        <Route path="dashboard" element=<SysAdminDashBoard /> />
-        <Route path="stores" element={<StoreList />} />
-        <Route path="users" element={<UsersList />} />
-      </Route>
-      <Route path="/user/" element=<PrivateRoute />>
-        <Route path="stores" element={<Stores />} />
-      </Route>
-      <Route path="/store-owner/" element={<PrivateRoute />} >
-        <Route path="dashboard" element={<StoreOwnerDashboard />} />
-      </Route> */}
     </Routes>
   </div>
 }

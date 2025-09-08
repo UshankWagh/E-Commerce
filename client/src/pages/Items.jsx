@@ -3,7 +3,6 @@ import { Plus, Search } from "lucide-react";
 import ItemCard from '../components/ItemCard';
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import Loader from '../components/Loader';
 
 const Stores = ({ auth }) => {
 
