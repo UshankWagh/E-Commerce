@@ -13,7 +13,7 @@ const app = express();
 const PORT = process.env.SERVER_PORT || 5001;
 
 app.use(cors({
-    origin: "https://e-commerce-usw.vercel.app"
+    origin: "https://e-commerce-pphgd94up-ushank-waghs-projects.vercel.app"
 }));
 app.use(express.json());
 
